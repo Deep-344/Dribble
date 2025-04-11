@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+   
+}
+ #nav{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+#nav-part1{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-part1 h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#nav-part2{
+    width:  30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#nav-part2 button{
+    padding: 15px 22px;
+    border-radius: 50px;
+    font-size:17px ;
+    font-weight: 600;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    margin: 0 10px;
+}
+#nav-part2 button:nth-child(1){
+    background-color:transparent;
+    color: #000;
+}
+#nav img{
+    height: 110px;
+}
+
+#content{
+    height: calc(100% - 75px);
+    width: 100%;
+   padding-top: 40px ;
+}
+#content h3{
+    position: relative;
+    background-color: #F2B0EA;
+    padding: 12px 16px;
+    width: fit-content;
+    border-radius: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 18px;
+}
+#content h1{
+    font-size: 65px;
+    text-align: center;
+    margin: 25px 0;
+    font-weight: 120;
+    line-height: 70px;
+}
+#content h4{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+}
+#content button{
+    padding: 20px 28px;
+    border-radius: 50px;
+    font-size:18px ;
+    font-weight: 600;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    margin: 30px 0px;
+}
+#bottom{
+    height: 380px;
+    width: 100%;
+    padding: 5px;
+    white-space: nowrap;
+    /*display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;*/
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#bottom ::-webkit-scrollbar{
+    display: none;
+}
+.elem{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 320px;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-right: 30px;
+    /*flex-shrink: 0;*/
+    overflow: hidden;
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.elem video{
+ 
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+}
+.elem .text-btm{
+    height: 40%;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    background-color: red;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    padding:42px;
+    position: relative;
+    padding-top: 200px;
+}
+#page2 h1{
+    padding: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.box{
+    position: relative;
+    height: 320px;
+    width: 440px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 15px;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box-btm{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom:-40%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.829));
+    transition: all ease 0.3s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.box:hover .box-btm{
+   bottom: 0;
+}
+.box-btm i{
+    background-color: white;
+    padding: 8px;
+    color: black;
+    border-radius: 50%;
+    font-size: 19px;
+}
+.box-btm h5{
+    font-size: 20px;
+}
+
+#page2 #footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+}
+#footer h5{
+    font-weight: 800;
+    font-size: 20px;
+    padding: 6px;
+}
+
+#footer img{
+    height: 70px;
+}
+#page2 #button{
+    width: fit-content;
+    padding: 20px 28px;
+    border-radius: 50px;
+    font-size:18px ;
+    font-weight: 600;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    margin: 30px 0px;
+}
